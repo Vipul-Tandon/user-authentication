@@ -3,6 +3,8 @@ class AuthenticationController < ApplicationController
 
     def login
         @user = User.find_by_email(params[:email])
+        # if @user && @user.authenticate(params[:password])
+        # &. (safe navigation) checkes if LHS is nil, if not, then performs the RHS (method call, property access, etc)
         if @user&.authenticate(params[:password])
             token = JsonWebToken.encode(user_id: @user.id)
             time = Time.now + 24.hours.to_i
