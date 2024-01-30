@@ -38,6 +38,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem 'rspec-rails', '~> 6.1.0'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -47,4 +50,4 @@ end
 
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
-
+gem 'faker'
