@@ -51,3 +51,5 @@ end
 gem 'jwt', '~> 1.5', '>= 1.5.4'
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'faker'
+
+gem 'simplecov', require: false, group: :test
