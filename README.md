@@ -1,24 +1,15 @@
-# README
+# 1. User Authentication:-
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project:-  A simple user authentication service using Ruby on Rails.
 
-Things you may want to cover:
+## Contents:- 
 
-* Ruby version
+• Endpoints: POST /register (user registration), POST /login (user login), POST /logout (user logout).
 
-* System dependencies
+• Controllers & Models: User model for storing user details, controllers for handling user registration, login, and logout.
 
-* Configuration
+• JWT Token-based Authentication: Use JWT tokens for authentication. Implement token generation on login and validate tokens on subsequent requests.
 
-* Database creation
+•  Input Validation: Validate input data to prevent injection attacks (such as SQL injection).
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+• Unit Tests: Write unit tests for the whole project
